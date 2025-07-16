@@ -34,7 +34,6 @@ namespace PokemonForms
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
             btnPokemonLoad = new Button();
             btnCategoryLoad = new Button();
             btnCountryLoad = new Button();
@@ -42,92 +41,120 @@ namespace PokemonForms
             btnMoveLoad = new Button();
             btnReviewLoad = new Button();
             btnReviewerLoad = new Button();
-            ((ISupportInitialize)dataGridView1).BeginInit();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(131, 24);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(480, 242);
-            dataGridView1.TabIndex = 0;
             // 
             // btnPokemonLoad
             // 
-            btnPokemonLoad.Location = new Point(212, 272);
+            btnPokemonLoad.BackColor = Color.DodgerBlue;
+            btnPokemonLoad.Cursor = Cursors.No;
+            btnPokemonLoad.FlatStyle = FlatStyle.Popup;
+            btnPokemonLoad.ForeColor = SystemColors.Window;
+            btnPokemonLoad.Location = new Point(323, 38);
             btnPokemonLoad.Name = "btnPokemonLoad";
             btnPokemonLoad.Size = new Size(75, 23);
             btnPokemonLoad.TabIndex = 1;
             btnPokemonLoad.Text = "Pokemon";
-            btnPokemonLoad.UseVisualStyleBackColor = true;
+            btnPokemonLoad.UseVisualStyleBackColor = false;
             btnPokemonLoad.Click += btnPokemonLoad_Click;
             // 
             // btnCategoryLoad
             // 
-            btnCategoryLoad.Location = new Point(253, 301);
+            btnCategoryLoad.BackColor = Color.DodgerBlue;
+            btnCategoryLoad.FlatStyle = FlatStyle.Popup;
+            btnCategoryLoad.ForeColor = SystemColors.Window;
+            btnCategoryLoad.Location = new Point(323, 67);
             btnCategoryLoad.Name = "btnCategoryLoad";
             btnCategoryLoad.Size = new Size(75, 23);
             btnCategoryLoad.TabIndex = 2;
             btnCategoryLoad.Text = "Category";
-            btnCategoryLoad.UseVisualStyleBackColor = true;
+            btnCategoryLoad.UseVisualStyleBackColor = false;
             btnCategoryLoad.Click += btnCategoryLoad_Click;
             // 
             // btnCountryLoad
             // 
-            btnCountryLoad.Location = new Point(293, 272);
+            btnCountryLoad.BackColor = Color.DodgerBlue;
+            btnCountryLoad.BackgroundImageLayout = ImageLayout.Center;
+            btnCountryLoad.FlatStyle = FlatStyle.Popup;
+            btnCountryLoad.ForeColor = SystemColors.Window;
+            btnCountryLoad.Location = new Point(323, 154);
             btnCountryLoad.Name = "btnCountryLoad";
             btnCountryLoad.Size = new Size(75, 23);
             btnCountryLoad.TabIndex = 3;
             btnCountryLoad.Text = "Country";
-            btnCountryLoad.UseVisualStyleBackColor = true;
+            btnCountryLoad.UseVisualStyleBackColor = false;
             btnCountryLoad.Click += btnCountryLoad_Click;
             // 
             // btnOwnerLoad
             // 
-            btnOwnerLoad.Location = new Point(374, 272);
+            btnOwnerLoad.BackColor = Color.DodgerBlue;
+            btnOwnerLoad.FlatStyle = FlatStyle.Popup;
+            btnOwnerLoad.ForeColor = SystemColors.Window;
+            btnOwnerLoad.Location = new Point(323, 125);
             btnOwnerLoad.Name = "btnOwnerLoad";
             btnOwnerLoad.Size = new Size(75, 23);
             btnOwnerLoad.TabIndex = 4;
             btnOwnerLoad.Text = "Owner";
-            btnOwnerLoad.UseVisualStyleBackColor = true;
+            btnOwnerLoad.UseVisualStyleBackColor = false;
             btnOwnerLoad.Click += btnOwnerLoad_Click;
             // 
             // btnMoveLoad
             // 
-            btnMoveLoad.Location = new Point(415, 301);
+            btnMoveLoad.BackColor = Color.DodgerBlue;
+            btnMoveLoad.FlatStyle = FlatStyle.Popup;
+            btnMoveLoad.ForeColor = SystemColors.Window;
+            btnMoveLoad.Location = new Point(323, 183);
             btnMoveLoad.Name = "btnMoveLoad";
             btnMoveLoad.Size = new Size(75, 23);
             btnMoveLoad.TabIndex = 5;
             btnMoveLoad.Text = "Move";
-            btnMoveLoad.UseVisualStyleBackColor = true;
+            btnMoveLoad.UseVisualStyleBackColor = false;
             btnMoveLoad.Click += btnMoveLoad_Click;
             // 
             // btnReviewLoad
             // 
-            btnReviewLoad.Location = new Point(455, 272);
+            btnReviewLoad.BackColor = Color.DodgerBlue;
+            btnReviewLoad.FlatStyle = FlatStyle.Popup;
+            btnReviewLoad.ForeColor = SystemColors.Window;
+            btnReviewLoad.Location = new Point(323, 212);
             btnReviewLoad.Name = "btnReviewLoad";
             btnReviewLoad.Size = new Size(75, 23);
             btnReviewLoad.TabIndex = 6;
             btnReviewLoad.Text = "Review";
-            btnReviewLoad.UseVisualStyleBackColor = true;
+            btnReviewLoad.UseVisualStyleBackColor = false;
             btnReviewLoad.Click += btnReviewLoad_Click;
             // 
             // btnReviewerLoad
             // 
-            btnReviewerLoad.Location = new Point(334, 301);
+            btnReviewerLoad.BackColor = Color.DodgerBlue;
+            btnReviewerLoad.FlatStyle = FlatStyle.Popup;
+            btnReviewerLoad.ForeColor = SystemColors.Window;
+            btnReviewerLoad.Location = new Point(323, 96);
             btnReviewerLoad.Name = "btnReviewerLoad";
             btnReviewerLoad.Size = new Size(75, 23);
             btnReviewerLoad.TabIndex = 7;
             btnReviewerLoad.Text = "Reviewer";
-            btnReviewerLoad.UseVisualStyleBackColor = true;
+            btnReviewerLoad.UseVisualStyleBackColor = false;
             btnReviewerLoad.Click += btnReviewerLoad_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16F);
+            label1.Location = new Point(269, 5);
+            label1.Name = "label1";
+            label1.Size = new Size(194, 30);
+            label1.TabIndex = 9;
+            label1.Text = "Please Select Data ";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(752, 412);
+            Controls.Add(label1);
             Controls.Add(btnReviewerLoad);
             Controls.Add(btnReviewLoad);
             Controls.Add(btnMoveLoad);
@@ -135,16 +162,13 @@ namespace PokemonForms
             Controls.Add(btnCountryLoad);
             Controls.Add(btnCategoryLoad);
             Controls.Add(btnPokemonLoad);
-            Controls.Add(dataGridView1);
             Name = "Form1";
             Text = "Form1";
-            ((ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dataGridView1;
         private Button btnPokemonLoad;
         private Button btnCategoryLoad;
         private Button btnCountryLoad;
@@ -152,5 +176,6 @@ namespace PokemonForms
         private Button btnMoveLoad;
         private Button btnReviewLoad;
         private Button btnReviewerLoad;
+        private Label label1;
     }
 }

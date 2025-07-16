@@ -26,101 +26,54 @@ namespace PokemonForms
             };
         }
 
-        private async void btnPokemonLoad_Click(object sender, EventArgs e)
+        private void btnPokemonLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var pokemons = await _httpClient.GetFromJsonAsync<List<PokemonDto>>("/api/pokemon");
-                dataGridView1.DataSource = pokemons;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("pokemon");
+            editPage.ShowDialog();
         }
 
-        private async void btnCountryLoad_Click(object sender, EventArgs e)
+        private  void btnCountryLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var country = await _httpClient.GetFromJsonAsync<List<CountryDto>>("/api/country");
-                dataGridView1.DataSource = country;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("country");
+            editPage.ShowDialog();
 
 
         }
 
-        private async void btnOwnerLoad_Click(object sender, EventArgs e)
+        private  void btnOwnerLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var owners = await _httpClient.GetFromJsonAsync<List<OwnerDto>>("/api/owner");
-                dataGridView1.DataSource = owners;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("owner");
+            editPage.ShowDialog();
 
         }
 
-        private async void btnReviewLoad_Click(object sender, EventArgs e)
+        private  void btnReviewLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var reviews = await _httpClient.GetFromJsonAsync<List<ReviewDto>>("/api/review");
-                dataGridView1.DataSource = reviews;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("review");
+            editPage.ShowDialog();
+
 
         }
 
-        private async void btnCategoryLoad_Click(object sender, EventArgs e)
+        private  void btnCategoryLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var categories = await _httpClient.GetFromJsonAsync<List<CategoryDto>>("/api/category");
-                dataGridView1.DataSource = categories;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("category");
+            editPage.ShowDialog();
+
 
         }
 
-        private async void btnReviewerLoad_Click(object sender, EventArgs e)
+        private  void btnReviewerLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var reviewers = await _httpClient.GetFromJsonAsync<List<ReviewerDto>>("/api/reviewer");
-                dataGridView1.DataSource = reviewers;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("reviewer");
+            editPage.ShowDialog();
 
         }
 
-        private async void btnMoveLoad_Click(object sender, EventArgs e)
+        private  void btnMoveLoad_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var moves = await _httpClient.GetFromJsonAsync<List<MoveDto>>("/api/move");
-                dataGridView1.DataSource = moves;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Veri çekilirken hata oluþtu: " + ex.Message);
-            }
+            var editPage = new EditPage("move");
+            editPage.ShowDialog();
 
         }
     }
